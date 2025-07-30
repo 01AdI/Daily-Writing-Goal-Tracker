@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./goal_traker.css" />
+    <link rel="stylesheet" href="../main.css" />
+  </head>
+  <body>
+       <header>
+      <!-- navbar and heading -->
+      <div class="navbar">
+         <a href="../main.html"><h1>Daily Writing Goal Tracker</h1></a>
+
+        <div class="nav">
+          <nav>
+            <a href="./index.html">Writing Tracker</a>
+            <a href="../mind-map/index.html">Mind-Map</a>
+            <a href="../to-do list/index.html">To-do List</a>
+            <a href="../calender-traker/index.html">Calender Tracker</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+
+    <main>
+      <section id="goal-traker">
+        <h2>🎯 Writing Goal Tracker</h2>
+
+        <div class="goal-input">
+          <label for="goal">Set your Word Goal :</label>
+          <input type="text" name="goal" id="goal" placeholder="E.g. 30">
+          <button id="start">start</button>
+          <button id="reset">reset</button>
+        </div>
+
+        <div class="input-area">
+          <textarea id="editor" placeholder="Start Writing here.."></textarea>
+        </div>
+
+        <div class="word-progess">
+          <div class="status">
+            <p>
+              Words written:  <span id="wordCount">0</span>/<span id="totalword">0</span> 
+            </p>
+          </div>
+
+          <div class="status-bar">
+            <div class="progress" id="progess-bar"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="display-message">
+          <h2 id="message">hello</h2>
+          <button id="btn">ok</button>
+      </section>
+      
+    </main>
+
+    <footer>
+      <div class="foot">
+
+        <h2>&#169; ALL the copyrights are reserved </h2>
+        <p>2024-2030</p>
+      </div>
+    </footer>
+
+    <script src="./goal_traker.js"></script>
+  </body>
+</html>

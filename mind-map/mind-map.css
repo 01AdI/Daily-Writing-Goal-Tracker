@@ -1,0 +1,181 @@
+body {
+    background-color: #001523;
+}
+
+section {
+    width: 70vw;
+    margin: 0px auto;
+    margin-top: 30px;
+    padding: 2rem;
+    color: #00A6FB;
+    background: linear-gradient(120deg, #00111C, #061A40);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #053758;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+/* @keyframes auroraWave {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+} */
+
+#toolbar {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    height: auto;
+}
+
+#toolbar button {
+    width: auto;
+    padding: 0.6rem 0.8rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    color: #00A6FB;
+    font-weight: 700;
+    background-color: #062940;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 0 10px #011f33;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#toolbar label {
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+
+
+#toolbar button:hover {
+    background-color: #0c2274;
+    color: whitesmoke;
+}
+
+#toolbar button:active {
+    transform: scale(1.05);
+}
+
+
+#canvas-container {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+}
+
+#mindmap-canvas {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(25, 24, 24);
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: crosshair;
+}
+
+input[type="text"] {
+    position: absolute;
+    padding: 5px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* =============================== */
+/* === Responsive Mind Map UI === */
+/* =============================== */
+
+@media (max-width: 1024px) {
+  section {
+    width: 85vw;
+    padding: 1.5rem;
+  }
+
+  #toolbar {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  #canvas-container {
+    height: 60vh;
+  }
+
+  #toolbar button,
+  #toolbar label {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    width: 95vw;
+  }
+
+  #toolbar {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  #toolbar button {
+    width: 100%;
+  }
+
+  #canvas-container {
+    height: 55vh;
+  }
+
+  input[type="text"] {
+    font-size: 13px;
+    padding: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  section h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  #toolbar label {
+    font-size: 0.9rem;
+  }
+
+  #toolbar button {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.6rem;
+  }
+
+  #canvas-container {
+    height: 50vh;
+  }
+
+  input[type="text"] {
+    font-size: 12px;
+    padding: 3px;
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mind Map Creator</title>
+    <link rel="stylesheet" href="./mind-map.css" />
+    <link rel="stylesheet" href="../main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <a href="../main.html"><h1>Daily Writing Goal Tracker</h1></a>
+
+        <div class="nav">
+          <nav>
+            <a href="../Writing Goal Tracker/index.html">Writing Tracker</a>
+            <a href="./index.html">Mind-Map</a>
+            <a href="../to-do list/index.html">To-do List</a>
+            <a href="./index.html">Calender Tracker</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>🧠 Mind Map</h2>
+
+        <div id="toolbar">
+          <button id="add-node">Add Node</button>
+          <button id="connect-nodes">Connect Nodes</button>
+          <button id="delete-node">Delete Node</button>
+          <button id="undo">Undo</button>
+          <button id="redo">Redo</button>
+          <label for="color-picker">Node Color:</label>
+          <input type="color" id="color-picker" value="#ff0000" />
+          <label for="color-picker">Line Color:</label>
+          <input type="color" id="line-color-picker" value="#000000" />
+        </div>
+        <div id="canvas-container">
+          <canvas id="mindmap-canvas"></canvas>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="foot">
+        <h2>&#169; ALL the copyrights are reserved</h2>
+        <p>2024-2030</p>
+      </div>
+    </footer>
+
+    <script src="./mind-map.js"></script>
+  </body>
+</html>

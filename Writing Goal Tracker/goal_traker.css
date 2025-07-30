@@ -1,0 +1,264 @@
+body {
+  background-color: #001523;
+}
+
+
+/* Goal traker section */
+
+#goal-traker{
+  width: 60vw;
+  margin: 0px auto;
+  margin-top: 30px;
+  padding: 20px;
+  color: #00A6FB;
+   background: linear-gradient(120deg, #00111C, #061A40);
+  border-radius: 10px;
+  box-shadow: 0 0 10px #053758;
+  position: relative;
+}
+
+#goal-traker h2{
+  font-size: 2rem;
+}
+.goal-input{
+  padding: 5px 0px;
+  margin-bottom: 30px;
+  display: flex; 
+  align-items: center; 
+}
+
+.goal-input label{
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-right:10px;
+}
+.goal-input input{
+  width: 110px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #00A6FB;
+  background-color: #062940;
+  font-weight: 700;
+  margin-left: 10px;
+  border: none;
+}
+
+.goal-input input::placeholder{
+  color: #00A6FB;
+}
+.goal-input input:focus {
+  border:1px solid #00A6FB;
+  outline: none;
+}
+.goal-input button
+{
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  color: #00A6FB;
+  font-weight: 700;
+  background-color: #062940;
+  box-shadow: 0 0 10px #011f33;
+  width: 10%;
+}
+
+.goal-input button:hover{
+   background-color: #0c2274;
+   color: whitesmoke;
+}
+
+#start{
+  margin-left: 8vw;
+}
+#reset{
+  margin-left: 50px;
+}
+.input-area
+{
+  width: 95%;
+}
+
+.input-area textarea{
+  width: 100%;
+  height: 35vh;
+  border-radius: 10px;
+  background-color: #062940;
+  color: #00A6FB;
+  font-size: 1.05rem;
+  font-weight: 500;
+    resize: vertical;
+}
+
+
+.word-progess{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.word-progess .status{
+  font-size: 1.3rem;
+}
+
+#wordCount{
+  margin-left: 5px;
+}
+
+.status-bar{
+  width: 100%;
+  background-color: #062940;
+  height: 30px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.progress{
+  width: 0%;
+  background-color: #00A6FB;
+  height: 100%;
+  border-radius:100px;
+  transition: width 0.3s ease-in-out;
+}
+
+/* message box */
+#display-message{
+  width: auto;
+  padding: 20px;
+  color: #00A6FB;
+  background: #00111C;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #053758;
+  position: absolute;
+  top:40%;
+  left: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+
+}
+#message{
+  font-size: 1.5rem;
+}
+
+#btn
+{
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  color: #00A6FB;
+  font-weight: 700;
+  background-color: #062940;
+  box-shadow: 0 0 10px #011f33;
+  width: 40%;
+}
+
+#btn:hover{
+   background-color: #0c2274;
+   color: whitesmoke;
+}
+
+/* === RESPONSIVE GOAL TRACKER === */
+
+@media (max-width: 1024px) {
+  #goal-traker {
+    width: 80vw;
+    padding: 15px;
+  }
+
+  #goal-traker h2 {
+    font-size: 1.8rem;
+  }
+
+  .goal-input label {
+    font-size: 1.2rem;
+  }
+
+  .goal-input input {
+    width: 100px;
+  }
+
+  .goal-input button {
+    width: 20%;
+    font-size: 0.95rem;
+  }
+
+  .input-area textarea {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 768px) {
+  #goal-traker {
+    width: 90vw;
+    padding: 15px;
+  }
+
+  .goal-input {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .goal-input label,
+  .goal-input input,
+  .goal-input button {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  #start, #reset {
+    margin-left: 0;
+  }
+
+  .input-area textarea {
+    height: 28vh;
+    font-size: 1rem;
+  }
+
+  .word-progess .status {
+    font-size: 1.1rem;
+  }
+
+  #display-message {
+    top: 30%;
+    left: 5%;
+    width: 90%;
+  }
+
+  #btn {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  #goal-traker h2 {
+    font-size: 1.5rem;
+  }
+
+  .goal-input label {
+    font-size: 1rem;
+  }
+
+  .input-area textarea {
+    height: 25vh;
+    font-size: 0.95rem;
+  }
+
+  .word-progess .status {
+    font-size: 1rem;
+  }
+
+  #message {
+    font-size: 1.2rem;
+  }
+
+  #btn {
+    font-size: 0.95rem;
+    width: 100%;
+  }
+}

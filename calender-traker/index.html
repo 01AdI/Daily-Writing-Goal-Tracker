@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Writing Goal Tracker</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="./calender.css" />
+    <link rel="stylesheet" href="../main.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="navbar">
+          <a href="../main.html"><h1>Daily Writing Goal Tracker</h1></a>
+
+        <div class="nav">
+          <nav>
+            <a href="../Writing Goal Tracker/index.html">Writing Tracker</a>
+            <a href="../mind-map/index.html">Mind-Map</a>
+            <a href="../to-do list/index.html">To-do List</a>
+            <a href="./index.html">Calender Tracker</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    
+    <main>
+      <section id="calender">
+        <h2>📅 Calender-traker</h2>
+
+        <div class="calender-div">
+          <div class="calender-header">
+            <div class="month-year">
+              <button id="prev">◀ previous</button>
+              <h3 id="month-name"></h3>
+              <button id="next">next ▶</button>
+            </div>
+            <div class="weekdays">
+              <p><strong>Sun</strong></p>
+              <p><strong>Mon</strong></p>
+              <p><strong>Tue</strong></p>
+              <p><strong>Wed</strong></p>
+              <p><strong>Thu</strong></p>
+              <p><strong>Fri</strong></p>
+              <p><strong>Sat</strong></p>
+            </div>
+          </div>
+          <div class="calender-days" id="calendarGrid"></div>
+        </div>
+      </section>
+
+      <section id="event" class="event-detail hidden">
+        <h2>Event Details</h2>
+
+        <div class="event-info">
+          <input type="text" id="event-title" placeholder="Event Title" />
+          <textarea id="event-desc" placeholder="Event Description"></textarea>
+        </div>
+        <div class="event-btn">
+
+          <div id="modal-actions">
+            <button id="save" class="save-btn">Save</button>
+          </div>
+          <button id="delete" class="delete-btn">Delete</button>
+          <button id="cancel" class="canel-btn">Cancel</button>
+        </div>
+      </section>
+    </main>
+
+   
+     <footer>
+      <div class="foot">
+
+        <h2>&#169; ALL the copyrights are reserved </h2>
+        <p>2024-2030</p>
+      </div>
+    </footer>
+
+    <script src="./calender.js"></script>
+  </body>
+</html>
